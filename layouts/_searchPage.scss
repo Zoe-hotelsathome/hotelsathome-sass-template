@@ -1,0 +1,203 @@
+//Category Page
+.search-ctg {
+    padding-bottom: 32px;
+    h2 {
+        margin: 0;
+        font-size: 1.1em;
+    }
+    h3 {
+        margin: 0;
+        font-size: 1.1em;
+        position: absolute;
+        padding: 12px 2%;
+        bottom: 0;
+        width: 97%;
+        background: $light-grey;
+        span {
+            &:after {
+                @include right-arrow;
+                border-color: $font-color;
+                background: transparent;
+                right: -3px;
+                top: -3px;
+            }
+        }
+    }
+    .item {
+        width: 33.333333333%;
+        float: left;
+        margin: 0 0 1% 0;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        a {
+            display: block;
+            overflow: hidden;
+            padding: 0 3% 3% 0;
+        }
+        p {
+            margin: 0;
+            &.ctg-image {
+                width: 100%;
+            }
+        }
+    }
+}
+
+//Search Page
+.search-items {
+    padding: 9px 9px 9px 0;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            width: 25%;
+            padding: 0 0 9px 9px;
+            float: left;
+            text-align: center;
+            img {
+                width: 100%;
+                height: auto;
+            }
+            a {
+                color: $dark-grey;
+                display: block;
+                padding: 0 0 35px 0;
+                position: relative;
+                &:hover {
+                    background: #efefef;
+                }
+            }
+        }
+    }
+}
+
+.results {
+    padding: 2% 0;
+}
+
+.search-items {
+    h3 {
+        letter-spacing: normal;
+        position: relative;
+        margin: 1em 0 1.5em 0;
+        span {
+            &:after {
+                content: "";
+                height: 1px;
+                width: 70%;
+                display: block;
+                margin: auto;
+                position: relative;
+                top: 10px;
+            }
+        }
+    }
+}
+
+.sort {
+    .button {
+        margin: 0 0 0 -2px;
+    }
+    input {
+        width: 350px;
+    }
+}
+
+ul.searchList {
+    padding: 1%;
+    margin: 12px 0;
+    li {
+        list-style: none;
+        display: inline;
+    }
+    a {
+        display: inline-block;
+        border: 1px solid $dark-grey;
+        padding: 2px 8px;
+        color: $dark-grey;
+    }
+    b {
+        color: #fff;
+        background: $dark-grey;
+        padding: 4px 8px;
+        display: inline-block;
+    }
+}
+
+@media screen and (#{$bp-960}) {
+    .search-ctg {
+        .item {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (#{$bp-660}) {
+    .search-ctg {
+        .item {
+            border-bottom: 1px solid $light-grey;
+            width: 100%;
+            float: none;
+            clear: both;
+            margin: 0;
+            text-align: left;
+
+            h3 {
+                margin: 0;
+                padding: 0 0 0 2%;
+                height: 100%;
+                background: transparent;
+                @include vert-align;
+                align-items: end;
+                width: 70%;
+                right: 0;
+                font-size: .95em;
+                span:after {
+                    bottom: -6px;
+                }
+            }
+            a {
+                padding: 0;
+            }
+            p.ctg-image {
+                width: 30%;
+                float: left;
+            }
+        }
+    }
+    .sort {
+        .button {
+            margin: 8px 0;
+            width: 350px;
+            a {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (#{$bp-480}) {
+    .sort {
+        .button {
+            margin: 8px 0;
+            width: 100%;
+            a {
+                display: block;
+            }
+        }
+        input {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (#{$bp-660-min}) {
+    #pgSearch {
+        background: url(../../images/banners/body-product-bg.jpg) 0 0 no-repeat;
+        background-size: contain;
+    }
+}

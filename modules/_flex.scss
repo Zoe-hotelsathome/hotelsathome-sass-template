@@ -1,0 +1,74 @@
+/*Flex Layout on HP and Category Pages */
+
+.item {
+    position: relative;
+    .stack {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        &.right-ps {
+            right: 0;
+        }
+        &.left-ps {
+            left: 0;
+        }
+    }
+    a{
+      display: block;
+    }
+    img{
+      width:100%;
+      height:auto;
+      display: block;
+    }
+}
+.ctg-image{
+    width:50%;
+}
+.stack {
+    text-align: center;
+    width:50%;
+    @include vert-align;
+    padding: 2%;
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    h1,
+    h2,
+    h3 {
+        text-transform: uppercase;
+        font-family: $actaBook;
+        margin: 0;
+        padding: 0 0 45px 0;
+        position: relative;
+        &:after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 1px;
+            background: $font-color;
+            margin: auto;
+            position: relative;
+            bottom: -23px;
+        }
+    }
+    p{
+      width:340px;
+    }
+    [class*='btn-'] {
+        margin: 25px 0 0 ;
+        width:auto;
+    }
+}
+@media screen and (#{$bp-660}) {
+    .stack {
+        p{
+            width:auto;
+            padding: 0 2%;
+        }
+    }
+}

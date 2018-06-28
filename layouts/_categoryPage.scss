@@ -1,0 +1,113 @@
+//Category Page
+.category {
+    .item {
+        clear: both;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        a {
+            display: block;
+            overflow: hidden;
+        }
+        p {
+            margin: 0;
+            &[class*=btn-] {
+                margin: 25px 0 0 0;
+            }
+        }
+        &.even {
+            .stack {
+                right: 0;
+                background: $light-grey;
+            }
+            .ctg-image {
+                float: left;
+            }
+        }
+        &.odd {
+            .stack {
+                left: 0;
+            }
+            .ctg-image {
+                float: right;
+            }
+        }
+    }
+}
+
+@media screen and (#{$bp-660}) {
+    #category-nav {
+        display: none;
+    }
+    .category {
+        .item {
+            .stack {
+                p {
+                    display: none;
+                    &[class*=btn-] {
+                        display: inline-block;
+                        margin: 9px 0;
+                    }
+                }
+                h3 {
+                    padding: 20px 0 0 0;
+                    font-size: .95em;
+                    &:after {
+                        bottom: -6px;
+                    }
+                }
+            }
+
+            .stack {
+                width: 70%;
+            }
+            .ctg-image {
+                width: 30%;
+            }
+            &.odd {
+                .stack {
+                    left: auto;
+                    right: 0;
+                }
+                .ctg-image {
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (#{$bp-480}) {
+    .category {
+        .item {
+            .stack {
+                h3 {
+                    padding: 0;
+
+                    &:after {
+                        @include right-arrow;
+                        border-color: $font-color;
+                        background: transparent;
+                        right: -3px;
+                        top: -3px;
+                    }
+                }
+                p.btn-txt {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (#{$bp-660-min}) {
+    .pgCategory,
+    .pgProduct,
+    body {
+        background: url(../../images/banners/body-product-bg.jpg) 0 0 no-repeat;
+        background-size: contain;
+    }
+}

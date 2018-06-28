@@ -1,0 +1,825 @@
+/*Checkout*/
+
+.pgCheckout {
+    .checkout h2 {
+        background: $dark-grey;
+        color: #fff;
+        margin: 0;
+        padding: 2%;
+    }
+    .tagline h2 {
+        background: transparent;
+        color: $dark-grey;
+    }
+}
+
+.pgCheckout {
+    .btn-plain {
+        border-color: $dark-grey;
+    }
+    .footer {
+        padding: 2%;
+    }
+}
+
+.checkout {
+    padding: 0;
+    p {
+        padding: 0 3%;
+        &.same {
+            margin: 0;
+            background: #fff;
+            padding: 15px 3%;
+        }
+        &.not-amz {
+            padding: 0;
+        }
+    }
+    h4 {
+
+        margin: 0;
+        padding: 12px 3%;
+    }
+}
+
+
+fieldset {
+    background: #f5f5f5;
+    margin: 0;
+    padding: 3% 0;
+    position: relative;
+}
+
+legend {
+    color: #fff;
+    font-size: 1.1em;
+    overflow: hidden;
+    padding: 2% 3%;
+    display: block;
+    width: 100%;
+    background: $dark-grey;
+    margin: 0;
+}
+
+.login legend {
+    display: none;
+}
+
+legend h3 {
+    margin: 0;
+}
+
+fieldset label {
+    display: block;
+    float: left;
+    width: 145px;
+    padding: 11px 8px 0 0;
+}
+
+.login,
+.shipping {
+    background: #fff;
+}
+
+.checkout {
+    input {
+        &[type="text"],
+        &[type="textarea"],
+        &[type="email"],
+        &[type="tel"] {
+            width: 55%;
+        }
+    }
+    select {
+        width: 55%;
+        padding: 8px;
+        border: 1px solid $dark-grey;
+        height: 39px;
+    }
+    .isWebkit select {
+        padding-right: 25px;
+    }
+    .pay {
+        margin: 12px 0;
+        float: right;
+        width: 50%;
+    }
+    .delivery {
+        list-style: none;
+        margin: 0 0 8px 0;
+        padding: 0;
+        clear: both;
+        font-size: 1.1em;
+    }
+}
+
+.delivery li {
+    display: block;
+    margin: 0 0 0 0;
+    background: $light-grey;
+    position: relative;
+}
+
+.shipping-initial {
+    padding: 0 3% 15px 3%;
+    p strong {
+        margin-right: 2%;
+        display: inline-block;
+        font-weight: normal;
+    }
+}
+
+p.selected-initial {
+    margin: 0;
+}
+
+.delivery a,
+p.selected-initial {
+    display: block;
+    padding: 12px 12px 12px 37px;
+    position: relative;
+    color: $dark-grey;
+}
+
+.delivery {
+    a:hover {
+        background: $font-color;
+        color: $white;
+    }
+    li.selected a {
+        background: #f5f5f5;
+        color: $dark-grey;
+        cursor: default;
+        position: relative;
+    }
+}
+
+p.selected-initial {
+    background: #f5f5f5;
+    color: $dark-grey;
+    cursor: default;
+    position: relative;
+}
+
+.delivery li.selected:before,
+p.selected-initial:before {
+    @include lux-icons;
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    top: 6px;
+    font-size: 27px;
+    content: "\e908";
+    color: $dark-grey;
+    z-index: 2;
+}
+
+
+.delivery {
+    em {
+        font-style: normal;
+    }
+    li.selected:before {}
+}
+
+.shippingDetails {
+    float: left;
+    margin: 10px 0 20px;
+    border: 1px solid #efefef;
+    background: #fff;
+    min-width: 55%;
+    h4 {
+        background: #efefef;
+        padding: 6px;
+        margin: 0 0 5px;
+    }
+    ul {
+        padding-left: 0;
+        li {
+            border-bottom: 1px solid #efefef;
+            display: block;
+            float: none;
+            clear: both;
+            text-align: right;
+            padding: 5px;
+            &:nth-child(even) {
+                background: #f5f5f5;
+            }
+            em {
+                display: block;
+                float: left;
+                width: 55%;
+                font-style: normal;
+                text-align: left;
+            }
+            &:first-child {
+                font-size: 1.1em;
+                color: #282828;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.checkout {
+    .note {
+        background: #fff;
+        border: 1px dotted #999;
+        padding: 3%;
+        font-size: 0.9em;
+    }
+    #groundnotice {
+        padding: 3% 3% 3% 4%;
+    }
+}
+
+.note strong {
+    font-size: 1.3em;
+    color: #a32236;
+    text-transform: uppercase;
+}
+
+#pgTermsConditions {
+    font-size: 0.9em;
+    color: #575350;
+}
+
+.checkout .btn-drk-grey {
+    padding: 9px 20px;
+}
+
+.shopping-cart-summary,
+.customer-details {
+    background: #f5f5f5;
+    margin-left: 5%;
+}
+
+.order .customer-details {
+    margin-left: 0;
+}
+
+.shopping-cart-summary {
+    ul {
+        list-style: none;
+        padding: 0;
+        padding: 2% 4%;
+        width: 100%;
+    }
+    h3 {
+        color: #fff;
+        padding: 2% 3%;
+        background: $dark-grey;
+        margin: 0;
+    }
+}
+
+.customer-details h3 {
+    color: #fff;
+    padding: 2% 3%;
+    background: $dark-grey;
+    margin: 0;
+}
+
+.shopping-cart-summary .edit {
+    float: right;
+    font-size: 0.7em;
+    color: #fff;
+    float: right;
+    font-size: 0.7em;
+    color: #fff;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.cart-view {
+    border-bottom: 1px solid #e5e5e6;
+    ul {
+        li {
+            display: block;
+            float: left;
+            &.Total {
+                float: right;
+            }
+        }
+        display: inline-block;
+        float: none;
+        margin: 0;
+        &:first-child {
+            font-size: 1.2em;
+            border-bottom: 1px solid #e5e5e6;
+        }
+        li {
+            &.ItemDescr {
+                width: 44%;
+                text-align: left;
+                margin: 0;
+                span {
+                    display: block;
+                    color: #7b7b7b;
+                }
+                br {
+                    display: none;
+                }
+            }
+            &.Qty {
+                width: 8%;
+                text-align: center;
+            }
+            &.Price {
+                width: 24%;
+                text-align: right;
+                span {
+                    display: inline-block;
+                    strike {
+                        margin-right: 0;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.shopping-cart-summary .cart-summary {
+    width: 100%;
+    padding: 0;
+}
+
+.cart-summary {
+    font-size: 1.1em;
+    overflow: hidden;
+    margin-bottom: 12px;
+    border-top: 1px solid #fff;
+    padding: 8px 0 0 0;
+    margin-top: 0;
+    li {
+        text-align: right;
+        padding: 2% 4%;
+        overflow: hidden;
+        &.red-text {
+            color: #ea1029;
+        }
+    }
+    .red-text {
+        color: #ea1029;
+    }
+    li {
+        &.last {
+            font-size: 1.1em;
+        }
+        label {
+            padding: 0;
+            width: 60%;
+            text-align: right;
+            float: left;
+        }
+    }
+}
+
+.checkout select {
+    &.month {
+        width: 34.4%;
+    }
+    &.year {
+        width: 20%;
+    }
+}
+
+.payment fieldset {
+    margin-bottom: 0;
+}
+
+.promo-code {
+    margin: 2% 0 0 5%;
+    padding: 0 0 3%;
+}
+
+.checkout .promo-code p {
+    padding: 0;
+    margin: 8px 0;
+}
+
+.confirmation {
+    background: $darkest-grey;
+    @include big-drop-shadow;
+    padding: 1%;
+    width: 400px;
+    margin: 15% auto;
+    position: relative;
+    color: $white;
+    p {
+        padding: 0;
+    }
+    h3 {
+        font-size: 2em;
+    }
+}
+
+#pleaseWaitButtonDiv2_PleaseWaitButton1 {
+    text-align: center;
+    padding: 10px 0;
+    float: right;
+}
+
+.payment .confirmation {
+    background: #efefef;
+    padding: 1% 3%;
+    width: auto;
+    margin: 0;
+}
+
+.checkout p.disclaimer,
+.disclaimer {
+    font-size: 11px;
+    padding: 0;
+    text-align: right;
+}
+
+.customer-details {
+    padding: 0 0 5px 0;
+    ul {
+        list-style: none;
+        padding: 0;
+        clear: both;
+    }
+    li {
+        padding: 0 5%;
+        &.first {
+            padding: 1% 1% 1% 3%;
+            font-size: 1.2em;
+            border-bottom: 1px solid #efefef;
+            margin-bottom: 8px;
+        }
+    }
+    a {
+        float: right;
+        padding-right: 5px;
+        text-decoration: none;
+    }
+    li.phone a {
+        float: none;
+        padding-right: 0;
+    }
+}
+
+.pgOrder .customer-details {
+    margin-left: 0;
+    p strong {
+        display: block;
+    }
+}
+
+.pgCheckout {
+    .search,
+    nav,
+    ul.global-sites,
+    .email-signup {
+        display: none;
+    }
+    .main-logo a {
+        height: 79px;
+
+        &:before {
+            font-size: 76px;
+        }
+    }
+
+    .shop-cart {
+        margin: 39px 0 0 0;
+    }
+    #main-nav {
+        height: auto;
+    }
+    .main-logo {
+        display: inline-block;
+    }
+    .cart-btn:hover,
+    .shop-cart:hover .cart-btn {
+        border-left: none;
+    }
+}
+
+#pgTermsConditions {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.fancybox-inner,
+ul.mattressTerms {
+    -webkit-overflow-scrolling: touch;
+}
+
+div.mattressTerms .btn-gray {
+    display: inline;
+}
+
+.overlay div.mattressTerms {
+    display: block;
+    z-index: 1002;
+    overflow: hidden;
+}
+
+div.mattressTerms {
+    border: 3px solid #d5d3ce;
+    padding: 8px;
+    width: 370px;
+    background: #fff;
+    margin: 10% auto;
+    p.button {
+        text-align: center;
+    }
+}
+
+#pgMattressCopy {
+    background: #fff;
+}
+
+#pgMattressTerms hr {
+    margin: 10px 0;
+}
+
+ul.mattressTerms {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    width: auto;
+    padding: 10px 10px 0 0;
+    margin: 0 0 10px;
+    color: #555;
+    height: 340px;
+    overflow: auto;
+    background: linear-gradient(#fff 30%, hsla(0, 0%, 100%, 0)) no-repeat local, linear-gradient(hsla(0, 0%, 100%, 0), #fff 70%) no-repeat bottom local, radial-gradient(at top, rgba(0, 0, 0, 0.2), transparent 70%) no-repeat, radial-gradient(at bottom, rgba(0, 0, 0, 0.2), transparent 70%) no-repeat bottom;
+    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+}
+
+.mattressTerms {
+    li {
+        margin: 0 0 10px 20px;
+        padding: 0 5px 0 0;
+        font-size: 14px;
+        list-style: disc;
+    }
+    a.btn-blue:hover {
+        color: #fff;
+        text-decoration: none;
+        background: #5179ad;
+    }
+}
+
+div.conf a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/*Amazon */
+
+#amzLogout {
+    padding: 10px;
+    margin: 12px 0;
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: $purple;
+    &:hover {
+        background: desaturate( $purple, 10%);
+    }
+    a {
+        color: #fff;
+    }
+}
+
+.amazon-pay {
+    padding: 18px 3%;
+    text-align: center;
+    display: none;
+}
+
+
+
+#AmazonPayButton {
+    position: relative;
+    padding: 5% 15px 0 15px;
+    display: none;
+}
+
+.amz-button-wrap {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.paypal-btn img {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.paypal-btn img {
+    width: 100%;
+    height: auto;
+}
+
+#AmazonPayButton img.amzB {
+    opacity: 1;
+    margin: 8% 0 0 0;
+    width: 84%;
+    position: static;
+    height: auto;
+}
+
+.not-amz .btnd {
+    letter-spacing: normal;
+    padding: 15px 2%;
+    display: block;
+}
+
+.or {
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 10px 2%;
+    margin: auto;
+    span {
+        display: inline-block;
+    }
+}
+
+span.or.amzP {
+    display: none;
+}
+
+
+
+@media screen and (#{$bp-960}) {
+
+    li.Update p a {
+        width: 100%;
+        margin: 0 3px 0 0;
+    }
+
+    .shopping-cart {
+        li.ItemImage,
+        .head li.Update {
+            display: none;
+        }
+    }
+
+    fieldset label,
+    .login fieldset label {
+        width: auto;
+        display: block;
+        float: none;
+        margin: 0 0 8px 0;
+    }
+
+    fieldset p {
+        margin: 5px 0;
+    }
+
+    .login {
+        label {
+            width: auto;
+            display: block;
+        }
+        button {
+            display: block;
+            margin: 8px 0 0;
+        }
+    }
+
+    .checkout {
+        .hotel-selector {
+            .btn-main,
+            .btn-drk-grey {
+                display: block;
+                float: none;
+                margin-top: 5px;
+            }
+        }
+        input {
+            &[type=email],
+            &[type=tel],
+            &[type=text],
+            &[type=textarea] {
+                width: 100%;
+            }
+        }
+        select {
+            width: 100%;
+            &.month {
+                width: 60%;
+            }
+            &.year {
+                margin: 0;
+                width: 38%;
+            }
+        }
+    }
+
+    .cart-view ul {
+        border-bottom: 1px solid #efefef;
+        li {
+            &.ItemDescr,
+            &.Price,
+            &.Qty,
+            &.Total {
+                float: none;
+                width: 60%;
+                margin-left: 0;
+                text-align: left;
+                padding: 5px 0;
+            }
+            &.ItemDescr {
+                width: 95%;
+                font-size: 1.1em;
+            }
+            &:before {
+                color: #000;
+                width: 90px;
+                display: inline-block;
+            }
+            &.Price:before {
+                content: "Price: ";
+                vertical-align: top;
+            }
+            &.Qty:before {
+                content: "Quantity: ";
+            }
+            &.Total:before {
+                content: "Total: ";
+            }
+        }
+        &:first-child {
+            display: none;
+        }
+    }
+}
+
+.pgCheckout {
+    .support {
+        top: 0;
+    }
+
+    .shop-cart {
+        margin: 0;
+    }
+
+    .header {
+        min-height: 72px;
+        .gradient {
+            min-height: 72px;
+            background-color: $black;
+        }
+    }
+    h1 {
+        margin: 0;
+        padding: 12px 0;
+    }
+    h2,
+    h3 {
+        font-size: 1.2em;
+        font-family: $sofia-regular;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (#{$bp-660}) {
+    .shopping-cart-summary,
+    .customer-details {
+        margin-left: 0;
+    }
+    .checkout {
+        .pay {
+            float: none;
+            display: block;
+            width: 100%;
+        }
+    }
+    .login {
+        h2 {
+            display: none;
+        }
+    }
+    .amazon-pay,
+    #AmazonPayButton,
+    span.or.amzP {
+        display: block;
+    }
+    .shipping,
+    .billing,
+    #checkout-email,
+    .shipping-info {
+        display: none;
+    }
+}

@@ -1,0 +1,164 @@
+
+/*CTA Buttons*/
+[class^='btn-'] {
+    display: inline-block;
+    padding: 0 20px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 0;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    -webkit-appearance: none;
+    transition-property: all;
+    transition-duration: 0.3s;
+    font-size: .9em;
+    span {
+        padding-right: 12px;
+    }
+}
+.header{
+    [class^='btn-']{
+        font-size: 1em;
+    }
+}
+[class^='btn-'] span:after {
+    @include right-arrow;
+    top: -3px;
+    right: -7px;
+    padding: 3.5px;
+}
+
+.pgCheckout [class*="btn"] {
+    transition-property: none;
+}
+
+[class^='btn-']:focus {
+    border: 0;
+    outline: 0;
+}
+
+.btn-main {
+    background: $purple;
+    color: $white;
+    border: 1px solid $purple;
+    &:hover {
+        background: desaturate( $purple, 10%);
+    }
+    span:after {
+        color: $white;
+    }
+}
+
+.btn-plain {
+    border: 1px solid transparent;
+    background: #ffffff;
+    color: $font-color;
+    span{
+        &:after{
+            border-color:$font-color;
+        }
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.btn-txt {
+    color: $purple;
+    span:after {
+        border-color: $purple;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/*Form Elements*/
+input {
+    &[type="text"],
+    &[type="textarea"],
+    &[type="search"],
+    &[type="tel"],
+    &[type="email"] {
+        padding: 8px;
+        border: 1px solid $dark-grey;
+        color: $dark-grey;
+        border-radius: 0;
+    }
+    padding: 8px;
+    border: 1px solid $white;
+    color: $dark-grey;
+    border-radius: 0;
+    background-color: $white;
+    &:focus,
+    &[type="text"]:focus,
+    &[type="textarea"]:focus,
+    &[type="tel"]:focus,
+    &[type="email"]:focus {
+        border: 1px solid $dark-grey;
+        outline: none;
+        color: $dark-grey;
+    }
+}
+
+select:focus,
+textarea:focus {
+    border: 1px solid $dark-grey;
+    outline: none;
+    color: $dark-grey;
+}
+
+input {
+    &[type=checkbox],
+    &[type=radio] {
+        margin-right: 5px;
+    }
+}
+
+select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    -moz-appearance: none;
+     border-radius: 0;
+    background-image: url(../../images/misc/select-arrow.svg);
+    background-position: 100% 50%;
+    background-repeat: no-repeat; 
+    padding: 5px 34px 5px 5px;
+    height: 44px;
+    background-color: $white;
+    border: 1px solid $light-grey;
+    &:after{
+        @include down-arrow;
+        border-color:$font-color;
+    }
+}
+.no-svg select{
+    background-image: url(../../images/misc/select-arrow.png);
+}
+
+
+input:focus:invalid,
+select:focus:invalid {
+    box-shadow: none;
+    outline: 0;
+}
+
+
+input[type="checkbox"] {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 7px;
+    background-color: $white;
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+

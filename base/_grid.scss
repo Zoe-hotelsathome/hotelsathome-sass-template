@@ -1,0 +1,95 @@
+/*Grids*/
+
+.grid-1 {
+    width: 100%;
+}
+
+.grid-2,
+.grid-2n {
+    width: 75%;
+}
+
+.grid-3 {
+    width: 65%;
+}
+
+.grid-4 {
+    width: 55%;
+}
+
+.grid-5 {
+    width: 50%;
+}
+
+.grid-6 {
+    width: 35%;
+}
+
+.grid-7 {
+    width: 25%;
+}
+
+
+.clearfix {
+    &:after,
+    &:before {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.container {
+    @include site-width-wrap;
+    padding-bottom: 72px;
+}
+.pgHome .container,
+.pgCategory .container{
+    padding-bottom: 0;
+}
+.content {
+    background: $white;
+}
+@media screen and (#{$bp-1440} + 310px)  {
+     
+}
+@media screen and (#{$bp-1440}) {
+    .container {
+        padding: 0 $grid-padding-mobile 72px $grid-padding-mobile;
+    }
+    .pgHome .container{
+        padding: 0 $grid-padding-mobile;
+    }
+}
+
+@media screen and (#{$bp-960}) {
+    .grid-2,
+    .grid-2n {
+        width: 100%;
+    }
+}
+
+
+@media screen and (#{$bp-660}) {
+    .right,
+    .left {
+        float: none;
+    }
+    [class*="grid-"] {
+        width: 100%;
+    }
+}

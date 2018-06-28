@@ -1,0 +1,78 @@
+// Typography
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+@import url("//hello.myfonts.net/count/368454");
+  
+@font-face {font-family: 'Acta-Medium';src: url('../fonts/368454_1_0.eot');src: url('../fonts/368454_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/368454_1_0.woff2') format('woff2'),url('../fonts/368454_1_0.woff') format('woff'),url('../fonts/368454_1_0.ttf') format('truetype'),url('../fonts/368454_1_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'SofiaProRegular';src: url('../fonts/368454_2_0.eot');src: url('../fonts/368454_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/368454_2_0.woff2') format('woff2'),url('../fonts/368454_2_0.woff') format('woff'),url('../fonts/368454_2_0.ttf') format('truetype'),url('../fonts/368454_2_0.svg#wf') format('svg');}
+ 
+
+@font-face {
+  font-family: "luxIcons";
+  src:url("../fonts/LUX-icons.eot");
+  src:url("../fonts/LUX-icons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/LUX-icons.woff") format("woff"),
+    url("../fonts/LUX-icons.ttf") format("truetype"),
+    url("../fonts/LUX-icons.svg#LUX-icons") format("svg");
+}
+
+
+
+.icon-Earth:before {
+  content: "\e909";
+}
+.icon-Account:before {
+  content: "\e907";
+}
+.icon-Checked:before {
+  content: "\e908";
+}
+.icon-Search:before {
+  content: "\e901";
+}
+.icon-Cart:before {
+  content: "\e900";
+}
+.icon-Chat:before {
+  content: "\e902";
+}
+.icon-Logo:before {
+  content: "\e906";
+}
+.icon-Mail:before {
+  content: "\e903";
+}
+.icon-Phone:before {
+  content: "\e904";
+}
+.icon-Shipping:before {
+  content: "\e905";
+}
+
+body {
+    font-family:$sofia-regular;
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    font-weight:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $actaBook;
+    font-size: 1.5em;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    margin-top: 0;
+}

@@ -1,0 +1,43 @@
+// Variables
+
+// Breakpoints
+$bp-1440 : "max-width: 1440px" !default;
+$bp-1440-min : "min-width: 1440px" !default;
+$bp-1200 : "max-width: 1200px" !default;
+$bp-960 : "max-width: 960px" !default;
+$bp-960-min : "min-width: 960px" !default;
+$bp-768 : "max-width: 768px" !default;
+$bp-768-min : "min-width: 767px" !default;
+$bp-660 :  "max-width: 660px" !default;
+$bp-660-min : "min-width: 660px" !default;
+$bp-480 :  "max-width: 480px" !default;
+
+// Colors
+$darkest-grey: #242323!default;
+$dark-grey: #404040!default;
+$light-grey: #eeeeee!default;
+$font-color: #666666 !default;
+$purple: #753c52 !default;
+$footer-sites: #1b1a1a;
+$white:#ffffff;
+$black:#000000;
+
+$grid-padding:20px !default;
+$grid-padding-mobile:2% !default;
+
+// Typography
+$sofia-regular:"SofiaProRegular", Helvetica, Arial, sans-serif !default;
+$actaBook:"Acta-Medium", "Times New Roman", Times, serif !default;
+
+//Grid Variables
+$container-width: 1440px;
+
+// Misc
+$global-radius: 3px !default;
+
+//images
+
+$sprite: "../images/misc/MER-sprite.svg";
+$bgPath: "../images/bg";
+$sprite-space: 20px;
+
